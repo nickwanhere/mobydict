@@ -1,4 +1,7 @@
 Mobydict::Application.routes.draw do
+  resources :words
+
+  root :to=>'words#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
